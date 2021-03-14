@@ -5,7 +5,7 @@
 
 {% for blog in blogs %}
 
-<h2>{{ blog.title }}</h2>
+<a href"{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
 <h3>{{ blog.date }}</h3>
 <p>{{ blog.post }}</p>
 
