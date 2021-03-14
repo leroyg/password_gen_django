@@ -1,5 +1,10 @@
+{% load static %}
 <h1>This is HOMEEEEEE!!!</h1>
 
+<a href="{% static 'portfolio/Django_The_Right_Way.pdf' %}">Django The Right Way PDF</a>
+
+<div name="container">
+<img src={% static 'portfolio/jordan.jpg' %}
 
 {% for project in projects %}
 
@@ -10,3 +15,4 @@
 <p><a href="{{ project.url }}">Link to Project</a></p>
 {% endif %}
 {% endfor %}
+</div>
